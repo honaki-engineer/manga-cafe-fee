@@ -62,6 +62,16 @@ composer install
 ```bash
 composer run
 ```
+※ `composer run` 実行時に以下の警告が出る場合がありますが、実行自体は正常です：
+```bash
+A script named run would override a Composer command and has been skipped
+Script to run: 
+  [test] Runs the test script as defined in composer.json
+  [run ] 
+```
+これは Composer の内部コマンド名「run」と重複しているための警告であり、実際には php run.php が正しく実行されています。  
+「Enter」を押すと以下の出力例が表示されます。  
+  
 出力例：
 ```markdown
 ============================
